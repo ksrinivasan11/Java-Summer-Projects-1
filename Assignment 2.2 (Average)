@@ -6,9 +6,6 @@
 // a, b, c
 //*******************************************************************
 
-
-Variable List
-
 import java.util.Scanner;
 
 public class Average
