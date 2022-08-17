@@ -1,0 +1,29 @@
+//*******************************************************************
+// Kaushik Srinivasan
+// 8/16/2022
+// Assignment 2.4
+// Take degrees input (in Fahrenheit) and convert to Celsius
+// BASE, CONVERSION_FACTOR, fahrenheitTemp, celsiusTemp
+//*******************************************************************
+
+import java.util.Scanner;
+
+public class TempConverter
+{
+    public static void main (String[] args)
+    {
+        final int BASE = 32;
+        final double CONVERSION_FACTOR = 5.0/9.0;
+        
+        Scanner scantemp = new Scanner(System.in);
+        
+        System.out.print("Enter Degrees (in Fahrenheit): ");
+        int fahrenheitTemp = scantemp.nextInt();
+        double celsiusTemp;
+    
+        celsiusTemp = (fahrenheitTemp - BASE) * CONVERSION_FACTOR;
+        System.out.println ("Fahrenheit Temperature: " + fahrenheitTemp);
+        System.out.println ("Celsius Equivalent: " + celsiusTemp);
+    
+    }
+}
