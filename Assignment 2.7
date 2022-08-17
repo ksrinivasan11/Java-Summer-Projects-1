@@ -1,0 +1,37 @@
+//*******************************************************************
+// Kaushik Srinivasan
+// 8/16/2022
+// Assignment 2.7
+// Convert Seconds (inputted by user) to hours, minutes, and seconds)
+// m, h, sec, s
+//*******************************************************************
+
+import java.util.Scanner;
+public class SecondsConversion
+{
+    public static void main (String[] args)
+    {
+        Scanner scansec = new Scanner(System.in);
+        
+        int m = 0;
+        int h = 0;
+        
+        System.out.print("Seconds for Conversion: ");
+        int sec = scansec.nextInt();
+        
+        int s = sec;
+        
+        
+        if (s >= 60) {
+            m = s/60;
+            s = s%60;
+            if (m >= 60) {
+                h = m/60;
+                m = m%60;
+            }
+        }
+        
+        System.out.print(sec+" seconds is equal to ");
+        System.out.print(h+" hours, "+m+" minutes, and "+s+" seconds ");
+        }
+}
