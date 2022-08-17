@@ -1,0 +1,37 @@
+//*******************************************************************
+//  Kaushik Srinivasan
+// 8/16/2022
+// Assignment 2.3 (First Three)
+// Take two numbers from users and perform addition, subtraction, and multiplication on them
+// a, b
+//*******************************************************************
+
+import java.util.Scanner;
+
+public class Addition
+{
+    public static void main(String args[]) {
+        
+        Scanner scannum = new Scanner(System.in);
+        
+        System.out.print("Enter number 1 : ");
+        float a = scannum.nextFloat();
+          
+        System.out.print("Enter number 2 : ");
+        float b = scannum.nextFloat();
+        
+        float sum = a+b;
+        float dif = a-b;
+        float prod = a*b;
+        
+        System.out.print("Sum: ");
+        System.out.println(sum);
+        
+        System.out.print("Difference: ");
+        System.out.println(dif);
+        
+        System.out.print("Product: ");
+        System.out.println(prod);
+    }
+   
+}
