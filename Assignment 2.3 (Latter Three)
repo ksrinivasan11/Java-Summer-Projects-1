@@ -1,0 +1,38 @@
+//*******************************************************************
+//  Kaushik Srinivasan
+// 8/16/2022
+// Assignment 2.3 (Latter Three)
+// Take two numbers from users and perform division, find the remainder, and put them in an a to the bth power format
+// a, b
+//*******************************************************************
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Division
+{
+    public static void main(String args[]) {
+        
+        Scanner scannum = new Scanner(System.in);
+        
+        System.out.print("Enter number 1 : ");
+        float a = scannum.nextFloat();
+          
+        System.out.print("Enter number 2 : ");
+        float b = scannum.nextFloat();
+        
+        float quot = a/b;
+        float rem = a%b;
+        double pow = Math.pow(a,b);
+        
+        System.out.print("Quotient: ");
+        System.out.println(quot);
+        
+        System.out.print("Remainder: ");
+        System.out.println(rem);
+        
+        System.out.print("A^B: ");
+        System.out.println(pow);
+    }
+    
+}
